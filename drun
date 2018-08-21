@@ -1,0 +1,3 @@
+#!/bin/sh
+
+docker run -it --mount type=bind,source="$(pwd)",destination=/app,consistency=cached -w /app --name node node:latest bash
